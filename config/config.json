@@ -1,0 +1,14 @@
+{
+  "port": "3000",
+  "mongoose": {
+    "uri": "mongodb://localhost/volonterium",
+    "options": {
+      "useNewUrlParser": true
+    }
+  },
+  "messages": {
+    "actualityViewedTime": 1,
+    "actualityNotViewedTime": 1,
+    "loopSpacing": 1
+  }
+}
