@@ -6,55 +6,46 @@
     <div class="featured-post listing-bg">
         <div class="container">
             <div class="flex-row cards-loop">
+                <% for(let i=0; i <= 1; i++) { %>
                 <article class="flex-cell flex-md-6 tpl-related-post card">
-                    <a href="https://knd.te-st.ru/demo/lc/project/projects-project1/" class="entry-link">
-                        <div class="entry-preview"><img width="640" height="395" src="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/2-640x395.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/2-640x395.jpg 640w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/2-790x488.jpg 790w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/2-300x185.jpg 300w" sizes="(max-width: 640px) 100vw, 640px"></div>
+                    <a href="<%= needs[i]._id %>" class="entry-link">
+                        <div class="entry-preview">
+                            <img width="640" height="395"
+                                 src="<%= needs[i].img %>"
+                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">
+                        </div>
                         <div class="entry-data">
-                            <h4 class="entry-title">Образовательная программа для учеников средних школ</h4>
+                            <h4 class="entry-title"><%= needs[i].title %></h4>
+                            <div class="announcement">
+                                <%= needs[i].announcement %>
+                            </div>
                         </div>
                     </a>
                 </article>
-                <article class="flex-cell flex-md-6 tpl-related-post card">
-                    <a href="https://knd.te-st.ru/demo/lc/project/projects-project2/" class="entry-link">
-                        <div class="entry-preview"><img width="640" height="395" src="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/project2-640x395.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/project2-640x395.jpg 640w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/project2-790x488.jpg 790w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/project2-300x185.jpg 300w" sizes="(max-width: 640px) 100vw, 640px"></div>
-                        <div class="entry-data">
-                            <h4 class="entry-title">Программа отказа от алкогольной зависимости</h4>
-                        </div>
-                    </a>
-                </article>
+                <% } %>
             </div>
         </div>
     </div>
     <div class="main-content cards-holder listing-bg archive-post-list ">
         <div class="container">
             <div class="flex-row start cards-loop">
+                <% for(let i=2; i < needs.length; i++) { %>
                 <article class="flex-cell flex-md-6 flex-lg-4 tpl-post card">
-                    <a href="https://knd.te-st.ru/demo/lc/project/projects-project3/" class="thumbnail-link">
-                        <div class="entry-preview"><img width="640" height="395" src="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/4-640x395.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/4-640x395.jpg 640w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/4-790x488.jpg 790w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/4-300x185.jpg 300w" sizes="(max-width: 640px) 100vw, 640px"></div>
+                    <a href="<%= needs[i]._id %>" class="thumbnail-link">
+                        <div class="entry-preview">
+                            <img width="640" height="395" src="<%= needs[i].img %>"
+                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">
+                        </div>
                         <div class="entry-data">
-                            <h4 class="entry-title">Программа «Линия цвета»</h4>
+                            <h4 class="entry-title"><%= needs[i].title %></h4>
+                            <div class="announcement">
+                                <%= needs[i].announcement %>
+                            </div>
                         </div>
                         <div class="entry-meta"></div>
                     </a>
                 </article>
-                <article class="flex-cell flex-md-6 flex-lg-4 tpl-post card">
-                    <a href="https://knd.te-st.ru/demo/lc/project/projects-project4/" class="thumbnail-link">
-                        <div class="entry-preview"><img width="640" height="395" src="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/11-640x395.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/11-640x395.jpg 640w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/11-790x488.jpg 790w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/11-300x185.jpg 300w" sizes="(max-width: 640px) 100vw, 640px"></div>
-                        <div class="entry-data">
-                            <h4 class="entry-title">Программа поддержки «Близкий человек»</h4>
-                        </div>
-                        <div class="entry-meta"></div>
-                    </a>
-                </article>
-                <article class="flex-cell flex-md-6 flex-lg-4 tpl-post card">
-                    <a href="https://knd.te-st.ru/demo/lc/project/projects-project5/" class="thumbnail-link">
-                        <div class="entry-preview"><img width="640" height="395" src="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/14-640x395.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/14-640x395.jpg 640w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/14-790x488.jpg 790w, https://knd.te-st.ru/demo/lc/wp-content/uploads/2017/09/14-300x185.jpg 300w" sizes="(max-width: 640px) 100vw, 640px"></div>
-                        <div class="entry-data">
-                            <h4 class="entry-title">Программа «Дом»</h4>
-                        </div>
-                        <div class="entry-meta"></div>
-                    </a>
-                </article>
+                <% } %>
             </div>
         </div>
     </div>

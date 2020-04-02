@@ -5,3 +5,9 @@
 .logo-complex .text {
     padding-left: 0;
 }
+.tpl-related-post .entry-data {
+    margin-bottom: 34px;
+}
+.tpl-post .entry-data {
+    margin-bottom: 33px;
+}
