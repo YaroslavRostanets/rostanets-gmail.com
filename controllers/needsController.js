@@ -7,13 +7,15 @@ exports.index = async function(req, res) {
 };
 
 exports.detail = async function(req, res) {
+  console.log('TEST');
   const { needId } = req.params;
   const need = await Need.getNeedById(needId);
   console.log('needs: ', need);
-  res.render('needs', { title: 'Ми потребуємо', ...need, req });
+  res.render('needs/detail', { title: 'Ми потребуємо', ...need, req });
 };
 
 exports.add = async function(req, res) {
-  console.log('needs: ', needs);
-  res.render('needs', { title: 'Додати потребу' });
+  console.log('NEED');
+  //console.log('needs: ', needs);
+  res.render('needs/addNeed', { title: 'Додати потребу', req });
 };

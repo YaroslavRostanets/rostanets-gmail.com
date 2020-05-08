@@ -1,0 +1,59 @@
+<% include ../partials/header.ejs %>
+
+<style>
+    .page-title {
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .container {
+        padding: 50px 0 90px 0;
+    }
+</style>
+
+<div id="site_content" class="site-content">
+    <div class="container">
+        <h1 class="page-title">Звернутись за допомогою</h1>
+        <div class="card">
+            <div class="card-header">
+                Форма звернення
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">
+                        <h5 class="card-title">Назва звернення:</h5>
+                    </label>
+                    <input type="text" class="form-control" id="title" placeholder="Введіть назву звернення">
+                </div>
+
+                <div class="form-group">
+                    <label for="text"><h5 class="card-title">Текст звернення:</h5></label>
+                    <textarea class="form-control" id="text" rows="3"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Телефон</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword4">Номер карти</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword4">Банк</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Example file input</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer.ejs %>
